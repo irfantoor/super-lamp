@@ -1,0 +1,31 @@
+{
+    "name": "irfantoor/super-lamp",
+    "description": "bring your dependency chain to light",
+    "type": "library",
+    "keywords": ["super", "lamp", "light", "dependency", "chain"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Irfan TOOR",
+            "email": "email@irfantoor.com"
+        }
+    ],
+    "require": {
+        "irfantoor/command": "~0.5",
+        "irfantoor/debug": "~0.6"
+    },
+    "require-dev": {
+        "irfantoor/test": "~0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "IrfanTOOR\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/super-lamp"
+    ],
+    "scripts": {
+        "super-lamp": "php bin/super-lamp"
+    }
+}
