@@ -9,7 +9,7 @@ class SuperLampCommand extends Command
 {
     const NAME        = "super-lamp";
     const DESCRIPTION = "bring your dependency chain to light";
-    const VERSION     = "0.1";
+    const VERSION     = "0.1.1";
 
     /** 
      * All of the information regarding the require, require-dev and the installed

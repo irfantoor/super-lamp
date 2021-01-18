@@ -22,11 +22,14 @@ hosted at:
 
 ```sh
 # install it using composer globally
-$ composer globally require irfantoor/super-lamp
+$ composer global require irfantoor/super-lamp
 
 # suppose you have your own bin files in the ~/bin folder
 $ cd ~/bin
-$ ln -s ~/.composer/vendor/irfantoor/bin/super-lamp .
+$ ln -s ~/.composer/vendor/irfantoor/super-lamp/bin/super-lamp .
+
+# verify if it runs by:
+$ ./super-lamp -h
 
 # now you can go to your package folder
 $ cd ~/github/irfantoor/super-lamp

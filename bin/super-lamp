@@ -1,9 +1,18 @@
 #!/usr/bin/env php
 <?php
 
-require dirname(__DIR__) . "/vendor/autoload.php";
-
 use IrfanTOOR\SuperLampCommand;
+
+$root = __DIR__ . "/";
+$pos = strrpos($root, '/vendor/');
+
+if (!$pos) {
+    $pos = strrpos($root, '/bin/');
+}
+
+$root = substr($root, 0, $pos + 1);
+
+require $root . 'vendor/autoload.php';
 
 $cmd = new SuperLampCommand();
 $cmd->run();
